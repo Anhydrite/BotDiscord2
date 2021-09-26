@@ -1,53 +1,58 @@
 {
     "play": {
         "command": "Bplay",
-        "description": "jambon beurrejambon beurrejambon beurrejambon beurrejambon beurrejambon beurrejambon beurrejambon beurrejambon beurrejambon beurrejambon beurrejambon beurre",
-        "usage": "Bplay [url]"
+        "description": "Permet de jouer une musique à partir d'un lien ou de mots clés. Les playlists sont aussi acceptées",
+        "usage": "Bplay [url | string | playlist url]"
     },
     "stop": {
         "command": "Bstop",
-        "description": "jambon beurre",
-        "usage": "Bstop [url]"
+        "description": "Arrête la lecture en cours",
+        "usage": "Bstop"
     },
     "skip": {
         "command": "Bskip",
-        "description": "jambon beurre",
-        "usage": "Bskip [url]"
+        "description": "Permet de passer une ou plusieurs musiques",
+        "usage": "Bskip [?nombre]"
     },
     "queue": {
         "command": "Bqueue",
-        "description": "jambon beurre",
-        "usage": "Bqueue [url]"
+        "description": "Retourne les prochaines musiques dans la queue",
+        "usage": "Bqueue"
     },
     "info": {
         "command": "Binfo",
-        "description": "jambon beurre",
-        "usage": "Binfo [url]"
+        "description": "Fournit d'avantages d'informations sur la lecture actuelle",
+        "usage": "Binfo"
     },
     "earrape": {
         "command": "Bearrape",
-        "description": "jambon beurre",
+        "description": "Au fond du fun",
         "usage": "Bearrape"
     },
     "stopearrape": {
         "command": "Bstopearrape",
-        "description": "jambon beurre",
-        "usage": "Bstopearrape [url]"
+        "description": ":(",
+        "usage": "Bstopearrape"
     },
     "params": {
         "command" : "Bparams",
-        "description": "jambon beurre",
+        "description": "Permet de configurer plusieurs paramètres internes au serveur Discord",
         "usage": "Bparams [params] [true | false]",
         "copyrightFilter": {
             "command": "Bparams copyrightFilter",
-            "description" :"jambon beurre",
+            "description" : "Trie les musiques et ne permet que la diffusion que de celle possédant la licence Creative common ou contenant une notion de 'noCopyright' dans leur description",
             "usage": "Bparams copyrightFilter true|false"
+        },
+        "autoplay": {
+            "command": "Bparams autoplay",
+            "description" :"Si activé, va automatique nourrir la queue de nouvelles musiques en recommandation avec la dernière renseignée",
+            "usage": "Bparams autoplay true|false"
         }
     },
     "help": {
         "command": "Bhelp",
-        "description": "jambon beurre",
-        "usage": "Bhelp [url]"
+        "description": "Fournit des information sur les fonctionnalités du bot",
+        "usage": "Bhelp"
     },
     "": {
         "command": "B",

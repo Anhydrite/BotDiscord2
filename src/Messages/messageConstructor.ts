@@ -107,12 +107,13 @@ class MessageConstructor {
             embed_fields.push(   
                 {
                     name: "__" + description.command + "__",
-                    value: "**" + description.description + "**",
-                    inline: false
+                    value: "\u200b\n_**Description**_ \n" + description.description + "\n"
+                    + "\n___Utilisation___ \n" + description.usage + "\n\n",
+                    inline: true
                 },
             )
-        }
-        let msg: any = {
+        } 
+        let msg: any = { 
             embed : {
                 title: "Commandes",
                 author: {
