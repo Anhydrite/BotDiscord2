@@ -10,7 +10,7 @@ class PreferencesManager {
 
     constructor(){ 
 
-        this.path = process.cwd() + "\\data\\preferences.json";
+        this.path = process.cwd() + path.join("/data/commandDescription.json");
 
         const preferences3: string = fs.readFileSync(this.path, "utf-8");
 
