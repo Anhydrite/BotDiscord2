@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prod": "pm2 start dist/index.js --restart-delay=3000",
+    "prod": "pm2 start -f dist/index.js --restart-delay=3000",
     "dev": "concurrently -k -n \"Typescript,Node\" -p \"[{name}]\" -c \"blue,green\" \"tsc --watch\" \"nodemon --ext js dist/index.js\" "
   },
   "author": "",
