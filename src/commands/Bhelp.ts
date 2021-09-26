@@ -1,12 +1,9 @@
 import Discord from "discord.js";
-import { fstat } from "fs";
-import preferencesManager from "../guildPreferences/preferencesManager";
 import messageConstructor from "../Messages/messageConstructor";
 import messagesManager from "../Messages/messagesManager";
 import Btemplate from "./Btemplate";
 import fs from "fs";
 import { IHelp, description } from "BotVsAI"
-import botVsAi from "../BotVsAi";
 
 
 export default class Bhelp extends Btemplate {
@@ -15,7 +12,7 @@ export default class Bhelp extends Btemplate {
 
     private readonly commands: string[] = messagesManager.Commands;
 
-    static readonly commandsDescription: IHelp = JSON.parse( fs.readFileSync(process.cwd() +  "\\data\\commandDescription.json", "utf-8") );
+    static readonly commandsDescription: IHelp = JSON.parse( fs.readFileSync(process.cwd() +  "/data/commandDescription.json", "utf-8") );
 
     constructor(message: Discord.Message){
         super(message);

@@ -1,4 +1,4 @@
-import path, { parse } from "path";
+import path from "path";
 import fs from "fs";
 import { IPreferences, IPreferencesParams, paramsType} from 'BotVsAI';
 
@@ -10,13 +10,12 @@ class PreferencesManager {
 
     constructor(){ 
 
-        this.path = process.cwd() + path.join("/data/commandDescription.json");
+        this.path =  path.join(process.cwd(), "/data/preferences.json");
 
         const preferences3: string = fs.readFileSync(this.path, "utf-8");
 
         this.preferences = JSON.parse(preferences3);
 
-        
     }
 
     public copyrightFilter(guildId: string, activated: string): void | boolean {
