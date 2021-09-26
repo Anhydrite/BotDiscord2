@@ -30,6 +30,10 @@ class PreferencesManager {
 
         const state: boolean = (activated === "true");
 
+        if(typeof this.preferences[guildId] === "undefined") {
+            this.preferences[guildId] = {};
+        }
+
         this.preferences[guildId]['copyrightFilter'] = state;
 
         this.save();
@@ -48,6 +52,10 @@ class PreferencesManager {
         if( !this.isBoolean(activated) ) return;
 
         const state: boolean = (activated === "true");
+
+        if(typeof this.preferences[guildId] === "undefined") {
+            this.preferences[guildId] = {};
+        }
 
         this.preferences[guildId].autoplay = state;
 

@@ -40,7 +40,7 @@ class BotVsAi extends EventEmitter {
     }
 
     private setActivity(): void{
-        this.user.setActivity('Bhelp || Bmaj /!\\ 02/01/2021  || Binvite ', {
+        this.user.setActivity('Bhelp || REFONTE /!\\ 27/00/2021  || Binvite ', {
             type: 'LISTENING'
         }).then( () => {
             console.log("c good");
