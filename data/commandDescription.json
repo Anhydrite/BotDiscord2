@@ -1,0 +1,57 @@
+{
+    "play": {
+        "command": "Bplay",
+        "description": "jambon beurrejambon beurrejambon beurrejambon beurrejambon beurrejambon beurrejambon beurrejambon beurrejambon beurrejambon beurrejambon beurrejambon beurre",
+        "usage": "Bplay [url]"
+    },
+    "stop": {
+        "command": "Bstop",
+        "description": "jambon beurre",
+        "usage": "Bstop [url]"
+    },
+    "skip": {
+        "command": "Bskip",
+        "description": "jambon beurre",
+        "usage": "Bskip [url]"
+    },
+    "queue": {
+        "command": "Bqueue",
+        "description": "jambon beurre",
+        "usage": "Bqueue [url]"
+    },
+    "info": {
+        "command": "Binfo",
+        "description": "jambon beurre",
+        "usage": "Binfo [url]"
+    },
+    "earrape": {
+        "command": "Bearrape",
+        "description": "jambon beurre",
+        "usage": "Bearrape"
+    },
+    "stopearrape": {
+        "command": "Bstopearrape",
+        "description": "jambon beurre",
+        "usage": "Bstopearrape [url]"
+    },
+    "params": {
+        "command" : "Bparams",
+        "description": "jambon beurre",
+        "usage": "Bparams [params] [true | false]",
+        "copyrightFilter": {
+            "command": "Bparams copyrightFilter",
+            "description" :"jambon beurre",
+            "usage": "Bparams copyrightFilter true|false"
+        }
+    },
+    "help": {
+        "command": "Bhelp",
+        "description": "jambon beurre",
+        "usage": "Bhelp [url]"
+    },
+    "": {
+        "command": "B",
+        "description": "jambon beurre",
+        "usage": "B [url]"
+    }
+}
