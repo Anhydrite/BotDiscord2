@@ -8,7 +8,7 @@ class BotVsAi extends EventEmitter {
 
     private readonly bot: Discord.Client = new Discord.Client();
     private readonly prefix: string = "B";
-    private readonly key: string = require("./clés/clémichougaming.js");
+    private readonly key: string = require("./APIkeys/clémichougaming.js");
   
     
     
