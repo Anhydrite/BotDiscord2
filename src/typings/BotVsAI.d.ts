@@ -12,6 +12,10 @@ declare module 'BotVsAI' {
         command: string 
     } & { [index:string]: recursiveDescription };
 
+    export type paramsType = {
+        [index:string]: any
+    }
+
     export interface IHelp {
         [index: string]: description
     }

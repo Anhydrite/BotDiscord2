@@ -1,7 +1,6 @@
 import path, { parse } from "path";
 import fs from "fs";
-import { IPreferences, IPreferencesParams} from 'BotVsAI';
-
+import { IPreferences, IPreferencesParams, paramsType} from 'BotVsAI';
 
 
 class PreferencesManager {
@@ -102,38 +101,10 @@ class PreferencesManager {
         
     }
 
-    // set preferences(val){
-    //     console.log(this.preferences);
-
-    //     this.Preferences = val;
-    // }
-
-    /* 
- constructor() {
-        this.queues = {} as IQueues
-    } 
-
-    public getQueue(guildId: string){
-        const queue: Queue | undefined = this.queues[guildId];
- 
-        if(queue instanceof Queue)
-            return this.queues[guildId];
-        else
-            return this.createQueue(guildId);
-
-    }
-
-    private createQueue(guildId: string){
-        return this.queues[guildId] = new Queue();
-    }
-
-*/
 
 }
 
-type paramsType = {
-    [index:string]: any
-}
+
 
 const preferencesManager: paramsType = new PreferencesManager();
 
