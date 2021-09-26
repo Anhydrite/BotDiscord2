@@ -153,8 +153,6 @@ class Player {
         if(this.dispatcher !== null){
             // this.dispatcher.end();
             this.dispatcher.emit("finish");
-            console.log("end");
-
         }
     }
     
