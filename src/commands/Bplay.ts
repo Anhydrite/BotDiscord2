@@ -46,7 +46,9 @@ class Bplay extends Btemplate
 
         queue.addMany(musiqueItems);
 
-        this.message.react(emojiCharacters.thumbsup);
+        try{
+            this.message.react(emojiCharacters.thumbsup);
+        }catch(e){}
 
         if(!queue.hasPlayer()){
 
