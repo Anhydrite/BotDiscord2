@@ -42,8 +42,6 @@ class Player {
 
         if( ! this.queue.hasStillOne()){
 
-            
-
             this.stop();
             return;
         } 
@@ -52,6 +50,8 @@ class Player {
 
         this.dispatcher = this.connection!.play(
             YTDL(this.queue.actualPlayingURL() , {
+                filter: "audioonly",
+                quality: "auto"
             }),
             {
                 highWaterMark: 512,
@@ -61,6 +61,7 @@ class Player {
         )
 
         this.dispatcher.on("error", (e) => {
+            console.log("jean bernard");
             console.log(e);
         });
 
