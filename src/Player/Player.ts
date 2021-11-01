@@ -51,7 +51,6 @@ class Player {
         this.dispatcher = this.connection!.play(
             YTDL(this.queue.actualPlayingURL() , {
                 filter: "audioonly",
-                quality: "auto"
             }),
             {
                 highWaterMark: 512,

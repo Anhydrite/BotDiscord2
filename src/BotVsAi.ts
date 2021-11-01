@@ -7,7 +7,7 @@ import preferencesManager from "./guildPreferences/preferencesManager";
 class BotVsAi extends EventEmitter {
 
     private readonly bot: Discord.Client = new Discord.Client();
-    private readonly prefix: string = "B";
+    private readonly prefix: string = "C";
     private readonly key: string = require("./APIkeys/clémichougaming.js");
   
     

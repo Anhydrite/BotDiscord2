@@ -136,7 +136,7 @@ export default class Binfo extends Btemplate {
 			}
 		};
 
-		queue.linkinfosContent(msg);
+		await queue.linkinfosContent(msg);
 
 
 	}

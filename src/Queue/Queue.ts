@@ -149,7 +149,10 @@ class Queue {
 
     }
 
-    public linkinfosContent(infosContent: Object): void{
+    public async linkinfosContent(infosContent: Object): Promise<void>{
+
+        await this.deleteInfosMessage();
+        
         this.infosContent = infosContent;
     }
 
